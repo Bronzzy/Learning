@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/AWTTempConverter" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ArcDemo" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AudioDemo1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AudioDemo2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AudioDemo3" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/BouncingBall" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DrawBoxes" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DrawBoxes2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GraphicStringDemo" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GraphicsWindow" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/LineDemo" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MouseEvents" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/OvalDemo" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PolygonDemo" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/RectangleDemo" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SimpleApplet" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TempConverter" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

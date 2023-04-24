@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Appendix E/Appendix E.iml" filepath="$PROJECT_DIR$/Appendix E/Appendix E.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Case Studies/Case Studies.iml" filepath="$PROJECT_DIR$/Case Studies/Case Studies.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Online Chapters/Chapter 19/Chapter 19.iml" filepath="$PROJECT_DIR$/Online Chapters/Chapter 19/Chapter 19.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Online Chapters/Chapter 20/Chapter 20.iml" filepath="$PROJECT_DIR$/Online Chapters/Chapter 20/Chapter 20.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Online Chapters/Online Chapters.iml" filepath="$PROJECT_DIR$/Online Chapters/Online Chapters.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Source Code.iml" filepath="$PROJECT_DIR$/Source Code.iml" />
+    </modules>
+  </component>
+</project>
