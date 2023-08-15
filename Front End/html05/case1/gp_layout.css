@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 5
+   Case Problem 1
+   
+   Author: Dao Hoa Binh
+   Date: 2023-06-02
+   
+   Filename: gp_layout.css
+
+   This file contains the layout styles and media
+   queries used with sample pages from the Golden
+   Pulps website.
+
+*/
+
+
+/* Import Basic Design Styles Used on All Screens */
+
+@import url("gp_designs.css");
+
+/* Flex Layout Styles */
+
+body {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+   -ms-flex-direction: column;
+   flex-direction: column;
+   -ms-flex-wrap: wrap;
+   flex-wrap: wrap;
+}
+
+/* Page Body Content */
+#sheet {
+   -webkit-box-flex: 3;
+   -ms-flex-positive: 3;
+   flex-grow: 3;
+   -webkit-box-flex: 1;
+   -ms-flex-positive: 1;
+   flex-shrink: 1;
+   -webkit-box-flex: 301px;
+   -ms-flex-preferred-size: 301px;
+   flex-basis: 301px;
+}
+
+article {
+   -webkit-box-flex: 1;
+   -ms-flex-positive: 1;
+   flex-grow: 1;
+   -webkit-box-flex: 3;
+   -ms-flex-positive: 3;
+   flex-shrink: 3;
+   -webkit-box-flex: 180px;
+   -ms-flex-preferred-size: 180px;
+   flex-basis: 180px;
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 480px) {
+   .panel img {
+       width: 100%;
+   }
+
+   .horizontal-nav ul {
+       -webkit-box-ordinal-group: 99;
+       -ms-flex-order: 99;
+       order: 99;
+   }
+}
+
+/* Tablet and Desktop Devices: Greater than 480 pixels */
+@media screen and (min-width: 481px) {
+   .horizontal-nav ul {
+       display: -webkit-box;
+       display: -ms-flexbox;
+       display: flex;
+       -webkit-box-orient: horizontal;
+       -webkit-box-direction: normal;
+       -ms-flex-direction: row;
+       flex-direction: row;
+       -ms-flex-wrap: nowrap;
+       flex-wrap: nowrap;
+       height: 40px;
+   }
+
+   .horizontal-nav ul li {
+       -webkit-box-flex: 1;
+       -ms-flex-positive: 1;
+       flex-grow: 1;
+       -webkit-box-flex: 1;
+       -ms-flex-positive: 1;
+       flex-shrink: 1;
+       -webkit-box-flex: auto;
+       -ms-flex-preferred-size: auto;
+       flex-basis: auto;
+   }
+}
+
+/* Panels Widths for Wider Screens */
+@media screen and (min-width: 481px) {
+   .size1 img {
+       width: 100%;
+   }
+
+   .size2 img {
+       width: 60%;
+   }
+
+   .size3 img {
+       width: 40%;
+   }
+
+   .size4 img {
+       width: 30%;
+   }
+}

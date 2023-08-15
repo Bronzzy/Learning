@@ -1,0 +1,360 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+* {
+  outline: none;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html,
+body {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: white;
+  cursor: default;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(54, 18, 216);
+  display: block;
+  transition-duration: 0.3s;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+h3 {
+  color: orange;
+  margin: 10px 0;
+  font-size: 1.25em;
+}
+
+.resume {
+  width: 960px;
+  background: #E4A5FF;
+  color: rgb(5, 1, 15);
+  margin: 20px auto;
+  box-shadow: 10px 10px rgb(239, 181, 241);
+  position: relative;
+  display: flex;
+}
+
+.resume .base,
+.resume .skill {
+  box-sizing: border-box;
+  float: left;
+}
+
+.resume .base > div,
+.resume .skill > div {
+  padding-bottom: 10px;
+}
+
+.resume .base > div:last-of-type,
+.resume .skill > div:last-of-type {
+  padding-bottom: 0;
+}
+
+.resume .base {
+  width: 30%;
+  padding: 30px 15px;
+  background: #FFAAC9;
+  color: rgb(94, 86, 207);
+}
+
+.resume .base .personalinfo {
+  background-color: #FFCDA8;
+  padding: 30px 15px 40px 15px;
+  margin: -23px -10px 45px -8px;
+  position: relative;
+  transform-origin: left bottom;
+  z-index: 2;
+}
+
+.resume .base .personalinfo::after {
+  content: "";
+  position: absolute;
+  background: rgb(145, 129, 236);
+  width: 100%;
+  height: 30px;
+  bottom: -15px;
+  left: 0;
+  transform: skewY(-2deg) scaleY(0.4);
+  z-index: -1;
+}
+
+.resume .base .personalinfo img {
+  width: 100%;
+  border: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume .base .personalinfo #name {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 1.75em;
+  text-align: center;
+}
+
+.resume .base .personalinfo #job {
+  padding-top: 15px;
+  margin-bottom: 3px;
+  font-size: 1.75em;
+  text-align: center;
+}
+
+.resume .base .info .contact {
+  line-height: 24px;
+}
+
+.resume .base .info .contact address {
+  font-size: 15px;
+  text-align: left;
+}
+
+.resume .base .info .contact a:hover {
+  color: yellow;
+  text-decoration: underline;
+}
+
+.resume .base .info .follow {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.resume .base .info .follow {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.resume .base .info .follow ul {
+  columns: 4;
+}
+
+.resume .base .info .follow #facebook i {
+  font-size: 30px;
+  padding-right: 10px;
+}
+.resume .base .info .follow #twitter i {
+  font-size: 30px;
+  padding-right: 10px;
+}
+.resume .base .info .follow #instagram i {
+  font-size: 30px;
+  padding-right: 10px;
+}
+.resume .base .info .follow #linkedin i {
+  font-size: 30px;
+  padding-right: 10px;
+}
+
+.resume .base .info .follow a:hover {
+  border-radius: 5px;
+  color: yellow;
+  transition-duration: 0.3s;
+  transform: scale(1.5);
+}
+
+.resume .skill {
+  width: 85%;
+  padding: 30px;
+}
+
+.resume .skill h3 {
+  transition-duration: 0.3s;
+  margin-top: 0;
+}
+
+.resume .skill h3 i {
+  background: rgb(136, 137, 221);
+  width: 42px;
+  height: 42px;
+  font-size: 20px;
+  line-height: 42px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  transition-duration: 0.3s;
+}
+
+.resume .skill .education,
+.resume .skill .work {
+  float: left;
+}
+
+.resume .skill .education small,
+.resume .skill .work small {
+  display: block;
+  opacity: 0.7;
+}
+
+.resume .skill .education ul li,
+.resume .skill .work ul li {
+  position: relative;
+  margin-left: 15px;
+  padding-left: 25px;
+  padding-bottom: 10px;
+}
+
+.resume .skill .education ul li:first-of-type::before,
+.resume .skill .work ul li:first-of-type::before {
+  width: 10px;
+  height: 10px;
+  left: 1.5px;
+  top: -3px;
+  background: black;
+}
+
+.resume .skill .education ul li:last-of-type,
+.resume .skill .work ul li:last-of-type {
+  padding-bottom: 3px;
+}
+
+.resume .skill .education ul li::before,
+.resume .skill .education ul li::after,
+.resume .skill .work ul li::before,
+.resume .skill .work ul li::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.resume .skill .education ul li::before,
+.resume .skill .work ul li::before {
+  width: 7px;
+  height: 7px;
+  border: 3px solid white;
+  border-radius: 50%;
+  left: 3px;
+  z-index: 1;
+}
+
+.resume .skill .education ul li::after,
+.resume .skill .work ul li::after {
+  width: 3px;
+  height: 100%;
+  background: white;
+  left: 5px;
+  top: 0;
+}
+
+.resume .skill .education {
+  width: 48%;
+  background-color: #FFE7CE;
+  padding: 12px;
+}
+
+.resume .skill .work {
+  width: 48%;
+  background: #FFE7CE;
+  padding: 15px;
+  margin: 0 4% 15px 0;
+}
+
+.resume .skill .skills-prog {
+  clear: both;
+  background: #FFE7CE;
+  padding: 15px;
+}
+.resume .skill .skills-prog ul {
+  margin-left: 15px;
+}
+.resume .skill .skills-prog ul li {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  transition-duration: 0.3s;
+}
+
+.resume .skill .skills-prog ul li span {
+  display: block;
+  width: 120px;
+}
+
+.resume .skill .skills-prog ul li .skills-bar {
+  background: rgb(255, 255, 255);
+  height: 5px;
+  width: calc(100% - 120px);
+  position: relative;
+  border-radius: 2px;
+}
+
+.resume .skill .skills-prog ul li .skills-bar .bar {
+  position: absolute;
+  top: 0px;
+  height: 5px;
+  background: #E4A5FF;
+  box-shadow: 0 0 0 rgb(248, 246, 241);
+  border-radius: 5px;
+}
+
+.resume .skill .interests {
+  background: #FFE7CE;
+  margin: 15px 0 0;
+  padding: 15px;
+}
+
+.resume .skill .interests-items {
+  box-sizing: border-box;
+  padding: 0 0 15px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume .skill .interests-items .interests-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+
+.resume .skill .interests .interests-items div:hover {
+    font-weight: 800;
+}
+
+.resume .skill .interests .interests-items div:hover i {
+  transform: scale(1.2);
+}
+
+.resume .skill .interests-items div:hover span {
+  color:rgb(136, 137, 221);
+  transition-duration: 0.3s;
+}
+
+.resume .skill .interests-items div i {
+  font-size: 45px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  color: orange;
+  transition-duration: 0.3s;
+}
+
+.resume .skill .interests-items div span {
+  display: block;
+}
